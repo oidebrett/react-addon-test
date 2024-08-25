@@ -1,0 +1,28 @@
+---
+version: 0.0.1
+slug: reacttest
+name: React Vite Test
+description: Addon made in React/Vite
+url: https://github.com
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+homeassistant_api: true
+panel_admin: false
+hassio_api: true
+ingress: true
+ingress_stream: true
+init: false
+map:
+  - all_addon_configs:rw
+  - backup:rw
+  - homeassistant_config:rw
+  - media:rw
+  - share:rw
+  - ssl:rw
+  - addon_config:rw
+ports:
+  5173/tcp: 5173
