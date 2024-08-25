@@ -16,6 +16,7 @@ hassio_api: true
 ingress: true
 ingress_stream: true
 init: false
+webui: "http://homeassistant.local:3000"
 map:
   - all_addon_configs:rw
   - backup:rw
