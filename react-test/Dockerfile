@@ -7,5 +7,7 @@ WORKDIR /react-template
 COPY react-template /react-template
 
 RUN npm install
+RUN npm install -g serve
+RUN npm run build
 RUN chmod +x start-addon.sh
 CMD ["./start-addon.sh"]
